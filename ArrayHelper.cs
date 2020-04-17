@@ -10,5 +10,11 @@ namespace HomeWork._16._04
             Array.Resize(ref array,array.Length-1);
             return el;
         }
+        public static int Push<T> (ref T[] array, T el)
+        {
+            Array.Resize(ref array, array.Length+1);
+            array[array.Length-1] = el;
+            return array.Length;
+        }
     }
 }
