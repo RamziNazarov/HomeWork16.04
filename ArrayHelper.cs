@@ -32,5 +32,10 @@ namespace HomeWork._16._04
             array[0] = el;
             return array.Length;
         }
+        public static T[] Slice<T>(T[] array,int beginIndex, int endIndex)
+        {
+            T[] arr = new T[0];
+            return arr;
+        }
     }
 }
