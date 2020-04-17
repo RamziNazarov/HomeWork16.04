@@ -24,5 +24,13 @@ namespace HomeWork._16._04
             Array.Reverse(array);
             return el;
         }
+        public static int UnShift<T>(ref T[] array, T el)
+        {
+            Array.Reverse(array);
+            Array.Resize(ref array,array.Length+1);
+            Array.Reverse(array);
+            array[0] = el;
+            return array.Length;
+        }
     }
 }
